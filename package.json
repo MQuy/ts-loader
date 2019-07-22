@@ -15,17 +15,6 @@
     "docker:build": "docker build -t ts-loader .",
     "postdocker:build": "docker run -it ts-loader yarn test"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{ts,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/TypeStrong/ts-loader.git"
